@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="StylePedidos.css">
+</head>
+<body>
+    <h2>Haz tu pedido</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="number" id="telefono" name="telefono" maxlength="10"><br><br>
+        <label for="correo1">Correo:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        <label for="desc">Descripción general del pastel:</label>
+        <input type="text" id="desc" name="desc"><br><br>
+
+        <h3>Selecciona los sabores de tu pastel:</h3>
+        <input type="checkbox" id="sabor1" name="sabor1" value="chocolate">
+        <label for="sabor1">Chocolate</label><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="redvelvet">
+        <label for="sabor2">Red Velvet</label><br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="vainilla">
+        <label for="sabor3">Vainilla</label><br>
+        <input type="checkbox" id="sabor4" name="sabor4" value="naranja">
+        <label for="sabor4">Naranja</label><br><br>
+
+        <h3>Selecciona las decoraciones de tu pastel:</h3>
+        <input type="checkbox" id="deco1" name="deco1" value="fondant">
+        <label for="deco1">Fondant</label><br>
+        <input type="checkbox" id="deco2" name="deco2" value="chispas">
+        <label for="deco2">Chispas de chocolate</label><br>
+        <input type="checkbox" id="deco3" name="deco3" value="merengue">
+        <label for="deco3">Merengue</label><br>
+        <input type="checkbox" id="deco4" name="deco4" value="crema">
+        <label for="deco4">Crema batida</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form> 
+</body>
+</html>
